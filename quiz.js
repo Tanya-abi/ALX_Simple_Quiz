@@ -6,11 +6,11 @@ function checkAnswer(){
 
     let submit = document.getElementById('feedback');
 
-if (userAnswer) {
-    if(userAnswer.value !== correctAnswer){
-        feedback.textContent ="That's incorrect. Try again!";
-    } else {
+  if (userAnswer) {
+    if(userAnswer.value === correctAnswer){
         feedback.textContent = "Correct! Well done.";
+    } else {
+        feedback.textContent ="That's incorrect. Try again!";
     }
 }else {
     feedback.textContent = "Please select an answer";
